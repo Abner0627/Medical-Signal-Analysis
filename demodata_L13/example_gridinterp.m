@@ -19,7 +19,7 @@ V(5,2)=1.1;V(5,3)=1.2;V(5,4)=1.1;V(5,5)=1.1;
 
 %% interpolate the data 
 [Xf,Yf]=meshgrid(1:interpRes:5,1:interpRes:5);
-Vf=interp2(X,Y,V,Xf,Yf);
+Vf=interp2(X,Y,V,Xf,Yf, method);
 
 figure,
 colormap("jet")
