@@ -1,5 +1,5 @@
 %% Author: Lu, Chia-Feng 2014.01.02
-clear, close all
+clear, clc, close all
 
 %% initialize data
 method='spline'; 
@@ -22,9 +22,11 @@ V(5,2)=1.1;V(5,3)=1.2;V(5,4)=1.1;V(5,5)=1.1;
 Vf=interp2(X,Y,V,Xf,Yf);
 
 figure,
+colormap("jet")
 subplot(1,2,1),imagesc(V)
 subplot(1,2,2),imagesc(Vf)
 
 figure,
+colormap("jet")
 subplot(1,2,1),surf(X,Y,V)
 subplot(1,2,2),surf(Xf,Yf,Vf)

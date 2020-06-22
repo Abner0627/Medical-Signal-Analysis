@@ -5,7 +5,7 @@ clear, close all
 x=[5:0.25:10];
 y=sin(x)+1;
 
-%% add a zero padded period
+% add a zero padded period
 % zerox=[3:0.25:4];
 % zeroy=zeros(1,length(zerox));
 % x=[zerox x];  

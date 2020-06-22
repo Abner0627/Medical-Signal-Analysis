@@ -1,5 +1,5 @@
 %% Author: Lu, Chia-Feng 2014.01.02
-clear, close all
+clear, clc, close all
 
 %% initialize parameters
 x=0:0.25:10;
@@ -25,7 +25,7 @@ SNR=25; % in dB
 %% perform cubic spline data interpolation
 yy=interp1(x,y,xx,method);
 
+figure,
 plot(x,y,'o'),hold on,
 xlim([xx(1) xx(end)])
-pause
 plot(xx,yy,'r.--')
